@@ -1,0 +1,489 @@
+@import '_vars';
+@import 'modules/_navbar';
+
+@font-face {
+    font-family: 'Nanumbarunpen', sans-serif;
+    src: url("../css/Nanumbarunpen-Regular.woff"),
+         url("../css/Nanumbarunpen-Regular.woff2"); }
+
+
+.hidden { display: $hidden; }
+
+#app {
+    width: 100%;
+    overflow: hidden;
+    background-color: $main-color;
+    font-family: $font;
+}
+
+@media only screen and (max-width: 520px) {
+    
+    .banner {
+        background-image: url(../images/bg.gif);
+        background-position: top;
+        background-size: cover;
+        width: 100%;
+        height: 55vh;
+    }
+}
+
+@media only screen and (min-width: 521px) and (max-width: 799px) {
+    
+    .banner {
+        background-image: url(../images/bg.gif);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 70vh;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+
+    .banner {
+        background-image: url(../images/bg.gif);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    
+    #about {
+        background-image: url(../images/triangle.png);
+
+        .aboutMe {
+            
+            text-align: center;
+
+            .textBox {
+                //position: absolute;
+                //left: 50%;
+                //top: 40%;
+    
+                h2 {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+        
+                h3 {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+        
+                p {
+                    margin: 10px;
+                    font-size: 1em;
+                    line-height: 1.8em;
+                }
+    
+                .resume {
+                    margin-top: 20px;
+                    border: none;
+                    padding: 10px 20px;
+                    font-size: 1.2em;
+                    background-color: $red;
+                    border-radius: 20px;
+                    &:hover{ background-color: $orange; }
+                }
+    
+                .resume a {
+                    text-decoration: none;
+                    color: $main-color;
+                }
+            }
+        }
+        
+    
+        img {
+            object-position: center;
+            object-fit: cover;
+            width: 100%;
+            height: 100vh;
+        }
+    
+        .list {
+            margin-top: 40px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-evenly;
+    
+            .skills {
+    
+                h2 {
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 1em;
+                    line-height: 1.5em;
+                    text-align: left;
+                }
+            }
+        }
+    }    
+}
+
+@media only screen and (min-width: 521px) and (max-width: 799px) {
+    
+    #about {
+        background-image: url(../images/triangle.png);
+
+        .aboutMe {
+            text-align: center;
+
+            .textBox {
+
+                h2 {
+                    font-size: 1.7em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+        
+                h3 {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+        
+                p {
+                    margin: 10px;
+                    font-size: 1.1em;
+                    line-height: 1.8em;
+                }
+
+                .resume {
+                    margin-top: 20px;
+                    border: none;
+                    padding: 10px 30px;
+                    font-size: 1.2em;
+                    background-color: $red;
+                    border-radius: 20px;
+                }
+
+                .resume a {
+                    text-decoration: none;
+                    color: $main-color;
+                }
+            }
+        }
+        
+
+        img {
+            object-position: center;
+            object-fit: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .list {
+            margin-top: 40px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-evenly;
+
+            .skills {
+
+                h2 {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 1em;
+                    line-height: 1.5em;
+                    text-align: left;
+                }
+            }
+        }
+    
+    }
+}
+
+@media only screen and (min-width: 800px) {
+//about
+    #about {
+        background-image: url(../images/triangle.png);
+
+        .aboutMe {
+            text-align: center;
+
+            .textBox {
+                position: absolute;
+                left: 50%;
+                top: 40%;
+
+                h2 {
+                    font-size: 1.8em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+        
+                h3 {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+        
+                p {
+                    margin: 10px;
+                    font-size: 1.1em;
+                    line-height: 1.8em;
+                }
+
+                .resume {
+                    margin-top: 20px;
+                    border: none;
+                    padding: 10px 40px;
+                    font-size: 1.2em;
+                    background-color: $red;
+                    border-radius: 20px;
+                }
+
+                .resume a {
+                    text-decoration: none;
+                    color: $main-color;
+                }
+            }
+        }
+
+        .aboutMe::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+
+        img {
+            object-position: center;
+            object-fit: cover;
+            width: 50%;
+            height: 100vh;
+            float: left;
+            overflow: hidden;
+        }
+
+        .list {
+            margin-top: 40px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-evenly;
+
+            .skills {
+
+                h2 {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 1.1em;
+                    line-height: 1.5em;
+                    text-align: left;
+                }
+            }
+        }
+    
+    }
+
+}
+
+//work
+@media only screen and (max-width: 440px) {
+
+    #work {
+        background-image: url(../images/triangle.png);
+
+        h3 { 
+            margin-top: 80px;
+            padding: 10px;
+            font-size: 1.5em;
+        }
+
+        p { font-size: 1.2em; }
+
+        h3, p { text-align: center; line-height: 1.5em; }
+
+        .w-data {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+    
+            .work-panel {
+                margin: 10px;
+    
+                    .thumb {
+                        width: 390px;
+                        height: 220px;
+                        margin-bottom: 10px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 441px) {
+    #work {
+        background-image: url(../images/triangle.png);
+
+        h3 { 
+            margin-top: 80px;
+            padding: 10px;
+            font-size: 1.8em;
+        }
+        h3, p {
+            text-align: center;
+            line-height: 1.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .w-data {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+
+            .work-panel {
+                margin: 10px;
+
+                .thumb {
+                    width: 430px;
+                    height: 260px;
+                    margin: 10px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+}
+
+@import 'modules/_work.scss';
+
+//contact
+
+#contact {
+    font-family: $font;
+
+    h3 {
+        text-align: center;
+        font-size: 1.8em;
+        margin: 60px;
+    }
+
+    #close {    
+        right: 2%;
+        top: 2%;
+        font-size: 2em;
+        position: fixed;
+        color: $blue;
+        transition: all .2s ease-in-out;
+        &:hover {
+            color: $red; transform: scale(1.5);
+          }
+    }
+    
+    #form {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px;
+
+        label {
+            text-align: left;
+            font-size: 1.2em;
+        }
+    
+        input {
+            width: 100%;
+            height: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 5px 5px 5px 0;
+            border-style: none none solid none;
+            font-size: 1em;
+            border-color: $blue;
+        }
+    
+        textarea {
+            width: 100%;
+            height: 120px;
+            margin-top: 30px;
+            padding: 5px 5px 5px 0;
+            border-bottom: 2px;
+            border-style: none none solid none;
+            border-color: $blue;
+            font-size: 1em;
+        }
+        
+        #submit-btn {
+            padding: 10px 40px;
+            background-color: $red;
+            color: $main-color;
+            font-size: 1.2em;
+            border-radius: 20px;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 30px;
+            transition: .3s;
+            &:hover{
+              transform: scale(1.01);
+              background-color: $orange;
+            }
+        }
+
+    }
+}
+
+//data(contact)
+#dataBody { background-image: url(../images/triangle.png); }
+
+#goHome {
+    text-align: center;
+    margin: 20px;
+
+    button {
+        padding: 10px 40px;
+        border-style: none;
+        border-radius: 20px;
+        background-color: $red;
+        transition: .3s;
+        &:hover{
+            transform: scale(1.01);
+            background-color: $orange;
+        }
+
+        a {
+            color: $main-color;
+            text-decoration: none;
+            font-family: $font;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.c-text {
+    text-align: center;
+    margin: 40px;
+    font-family: $font;
+    font-size: 1.5em;
+}
+
+@import 'modules/_footer';

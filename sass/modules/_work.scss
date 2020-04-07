@@ -1,0 +1,201 @@
+@media only screen and (max-width: 520px) {
+
+    .w-info {
+        margin-top: 80px;
+    
+        .w-back {
+            text-decoration: none;
+            margin: 20px;
+            color: $text;
+            font-size: 1.2em;
+            position: absolute;
+        }
+    
+        .w-itext {
+            text-align: left;
+            margin: 10px;
+    
+            .w-textBox {
+    
+                h3 {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    line-height: 1.2em;
+                    margin-top: 20px;
+                }
+        
+                h4 {
+                    font-size: 1.1em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    line-height: 1.2em;
+                }
+        
+                p {
+                    font-size: 0.9em;
+                    line-height: 1.8em;
+                }
+            }
+        }
+    
+        img {
+            object-position: center;
+            object-fit: cover;
+            width: 100%;
+            height: 40vh;
+        }
+    
+        video {
+            width: 100%;
+            height: 100%;
+            margin-top: 60px;
+        }
+    
+        #l-video {
+            width: 100%;
+            height: 100%;
+            margin-top: 40px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 521px) and (max-width: 799px) {
+    
+    .w-info {
+        margin-top: 80px;
+    
+        .w-back {
+            text-decoration: none;
+            margin: 20px;
+            color: $text;
+            font-size: 1.4em;
+            position: absolute;
+        }
+    
+        .w-itext {
+            text-align: left;
+            margin: 10px;
+    
+            .w-textBox {
+    
+                h3 {
+                    font-size: 1.6em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    line-height: 1.2em;
+                    margin-top: 20px;
+                }
+        
+                h4 {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    line-height: 1.2em;
+                }
+        
+                p {
+                    font-size: 1em;
+                    line-height: 1.8em;
+                }
+            }
+        }
+    
+        img {
+            object-position: center;
+            object-fit: cover;
+            width: 100%;
+            height: 60vh;
+        }
+    
+        video {
+            width: 100%;
+            height: 100%;
+            margin-top: 60px;
+        }
+    
+        #l-video {
+            width: 100%;
+            height: 100%;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    
+    .w-info {
+        margin-top: 80px;
+    
+        .w-back {
+            text-decoration: none;
+            margin: 20px;
+            color: $text;
+            font-size: 1.5em;
+            position: absolute;
+        }
+    
+        .w-itext {
+            text-align: left;
+    
+            .w-textBox {
+                position: absolute;
+                left: 76%;
+                top: 16%;
+    
+    
+                h3 {
+                    font-size: 1.8em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    line-height: 1.2em;
+                    //margin-left: 10px;
+                }
+        
+                h4 {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    margin-right: 5px;
+                    line-height: 1.2em;
+                }
+        
+                p {
+                    font-size: 1.1em;
+                    line-height: 1.8em;
+                    margin-right: 5px;
+                }
+            }
+        }
+    
+        .w-itext::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    
+        img {
+            object-position: center;
+            object-fit: cover;
+            width: 75%;
+            height: 90vh;
+            float: left;
+            overflow: hidden;
+        }
+    
+        video {
+            width: 75%;
+            height: 100%;
+            float: left;
+            overflow: hidden;
+            margin-top: 60px;
+        }
+    
+        #l-video {
+            width: 100%;
+            height: 100%;
+            margin-top: 40px;
+        }
+    }
+}
